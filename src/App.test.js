@@ -54,6 +54,7 @@ describe('App', () => {
       });
 
       it('adds the new note to the state', () => {
+        // console.log(app.debug());
         expect(app.state().notes[0]).toEqual(testNote);
       });
 
@@ -71,7 +72,7 @@ describe('App', () => {
         });
 
         it('clears the notes in state', () => {
-          // console.log(app.state());
+          // console.log(app.debug());
           expect(app.state().notes).toEqual([]);
         });
       });
